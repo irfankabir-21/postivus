@@ -43,15 +43,15 @@
     line-height: normal;
 }
 
-.style-para{
+.style-para {
     color: #000;
 
-/* p */
-font-family: "Space Grotesk";
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    /* p */
+    font-family: "Space Grotesk";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .btn-primary {
@@ -102,13 +102,12 @@ line-height: normal;
 .section-1 h2 {
     margin-bottom: 35px;
 }
-.section-1 p{
+
+.section-1 p {
     margin-bottom: 35px;
 }
 
-.section-1 img {
-    
-}
+.section-1 img {}
 
 /* section-2 */
 
@@ -140,3 +139,226 @@ line-height: normal;
 }
 
 .section-3 p {}
+
+/* section-4 */
+
+.section-4 {
+    display: flex;
+    padding: 70px 60px;
+    align-items: flex-start;
+    gap: 64px;
+    border-radius: 45px;
+    background: var(--Dark, #191A23);
+    margin: 0px 100px;
+}
+
+.sub-sec{
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.line{
+    background-color: white;
+    width: 1px;
+height: 186px;
+}
+
+
+
+/* responsive */
+
+@media only screen and (max-width: 600px) {
+    
+
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Space Grotesk";
+    }
+    
+    .style-01 {
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        /* 140% */
+    }
+    
+    .style-02 {
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    .style-03 {
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        /* 140% */
+    }
+    
+    .style-04 {
+        color: #000;
+        /* h2 */
+        font-family: "Space Grotesk";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    .style-para {
+        color: #000;
+    
+        /* p */
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .btn-primary {
+        display: flex;
+        padding: 20px 35px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        border: 1px solid var(--Dark, #191A23);
+    }
+    
+    .btn-secondary {
+        display: flex;
+        padding: 20px 35px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        background: var(--Dark, #191A23);
+        color: white;
+    }
+    
+    /* navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px 100px;
+    
+        flex-direction: column;
+    }
+    
+    .second-part {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        flex-direction: column;
+    }
+    
+    /* section -1 */
+    
+    .section-1 {
+        margin: 0px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+
+        flex-direction: column;
+    }
+    
+    .section-1 h2 {
+        margin-bottom: 35px;
+    }
+    
+    .section-1 p {
+        margin-bottom: 35px;
+    }
+    
+    .section-1 img {
+        width: 100%;
+    }
+    
+    /* section-2 */
+    
+    .section-2 {
+        margin: 0px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 60px;
+
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .section-3 {
+        margin: 0px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        margin-right: 400px;
+
+        flex-direction: column;
+        gap: 30px;
+        margin: 0px;
+        padding: 0px;
+        margin: 20px 40px;
+    }
+    
+    .section-3 h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: greenyellow;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    
+    .section-3 p {}
+    
+    /* section-4 */
+    
+    .section-4 {
+        display: flex;
+        padding: 70px 60px;
+        align-items: flex-start;
+        gap: 64px;
+        border-radius: 45px;
+        background: var(--Dark, #191A23);
+        margin: 0px 100px;
+
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+    
+    .sub-sec{
+        display: flex;
+        gap: 5px;
+        margin-top: 10px;
+    }
+    
+    .line{
+        background-color: white;
+        width: 100px;
+    height: 1px;
+    }
+    
+
+
+  }
