@@ -1,105 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>postivus</title>
+    <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- daisy Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        
+.font-space-grotesk{
+  font-family: "Space Grotesk", sans-serif;
+}
+    </style>
 </head>
-
-<body>
-
-    <header>
-
-        <div class="navbar">
-
-            <div class="first-part">
-                <div class="nav-title"></div>
-                <img src="/images/logo-big.png" alt="">
-            </div>
-
-            <div class="second-part">
-
-                <div class="nav-side"></div>
-                <h3 class="nav-side-title style-01">About us</h3>
-                <h3 class="nav-side-title style-01">Services</h3>
-                <h3 class="nav-side-title style-01">Use Cases</h3>
-                <h3 class="nav-side-title style-01">Pricing</h3>
-                <h3 class="nav-side-title style-01">Blog</h3>
-                <button class="btn-primary style-01"> Request a quote</button>
-               
-
-            </div>
-
+<body class=" font-space-grotesk">
+  <header>
+    <nav>
+      <div class="navbar bg-base-100 shadow-sm px-4">
+        <div class="navbar-start">
+          <a href="#" class="btn btn-ghost text-xl p-0">
+            <img class="h-10 m-4" src="./Images/logo-big.png" alt="Postivus Logo" />
+          </a>
         </div>
 
-        <div class="section-1">
-
-            <div class="content-box-1">
-                <h1 class="style-02">Navigating the digital landscape for success</h1>
-                <p class="style-03">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
-                <button class="btn-secondary">Book a consultation</button>
-            </div>
-            <div>
-                <img src="/images/cover.png" alt="">
-            </div>
-
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 gap-2">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Use Cases</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+            <li>
+              <a
+                href="#"
+                class="p-2 rounded-lg border border-gray-300 hover:bg-gray-200 transition"
+                >Request a quote</a
+              >
+            </li>
+          </ul>
         </div>
 
-        <div class="section-2">
-            <img src="/images/amazon.png" alt="">
-            <img src="/images/dribble.png" alt="">
-            <img src="/images/hubspot.png" alt="">
-            <img src="/images/notion.png" alt="">
-            <img src="/images/netflix.png" alt="">
-            <img src="/images/zoom.png" alt="">
+        <div class="navbar-end lg:hidden">
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Use Cases</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Blog</a></li>
+              <li>
+                <a
+                  href="#"
+                  class="p-2 rounded-lg border border-gray-300 hover:bg-gray-200 transition"
+                  >Request a quote</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </nav>
 
-        <div class="section-3">
-            <h2 class="style-04">Case Studies</h2>
-            <p class="style-para">Explore Real-Life Examples of Our Proven Digital Marketing <br> Success through Our Case Studies</p>
+    <!-- Content -->
+    <div class="p-2 max-w-7xl mt-14 mx-auto">
+      <h1 class="font-bold text-5xl mb-1 leading-tight">
+        Navigating the <br />
+        digital landscape <br />
+        for success
+      </h1> <div
+        class="flex flex-col lg:flex-row-reverse justify-between items-center gap-2" >
+        <img
+          src="./Images/cover.png"
+          alt="Digital marketing illustration"
+          class="max-w-full lg:w-1/2"
+        />
+ <div class="lg:w-1/2 px-2">
+          <p class="text-xl mb-6 leading-relaxed">
+            Our digital marketing agency helps businesses grow and succeed
+            online through a range of services including SEO, PPC, social media
+            marketing, and content creation.
+          </p>
+
+          <div class="flex justify-center lg:justify-start">
+            <button
+              class="btn bg-black text-white px-10 py-6 rounded-xl hover:bg-gray-800 transition"
+            >
+              Book a consultation
+            </button>
+          </div>
         </div>
+      </div>
+    </div>
+  </header>
 
-        <div class="section-4">
+  <main class="max-w-7xl mx-auto p-6">
+    <section class="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 items-center">
+      <img src="./Images/amazon.png" alt="Amazon logo" class="mx-auto" />
+      <img src="./Images/dribble.png" alt="Dribble logo" class="mx-auto" />
+      <img src="./Images/hubspot.png" alt="Hubspot logo" class="mx-auto" />
+      <img src="./Images/notion.png" alt="Notion logo" class="mx-auto" />
+      <img src="./Images/netflix.png" alt="Netflix logo" class="mx-auto" />
+      <img src="./Images/zoom.png" alt="Zoom logo" class="mx-auto" />
+    </section>
+<!-- case studeies -->
+    <section class="mt-12">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:gap-6">
+        <h2
+          class="text-center lg:text-left text-3xl bg-[#B9FF66] rounded-sm px-4 py-2 mb-4 lg:mb-0"
+        >
+          Case Studies
+        </h2>
+        <p class="text-xs text-center lg:text-left max-w-md">
+          Explore Real-Life Examples of Our Proven Digital Marketing Success
+          through Our Case Studies
+        </p>
+      </div>
+      <div class="card bg-neutral text-neutral-content mt-12">
+       
+  <div class="card-body  my-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+    <div class="ml-4">
+    <p>For a local restaurant, we <br> implemented a targeted PPC <br> campaign that resulted in a 50% <br> increase in website traffic and a <br> 25% increase in sales.</p>
+   <span class="text-[#B9FF66] flex gap-2">Learn more <img src="Images/Icon.png" alt=""></span>
+   </div>
+ <div class="flex">
+    <div class="border-e-2 m-2"> <p></p></div>
+    <div>
+     <p>For a local restaurant, we <br> implemented a targeted PPC <br> campaign that resulted in a 50% <br> increase in website traffic and a <br> 25% increase in sales.</p>
+   <span class="text-[#B9FF66] flex gap-2">Learn more <img src="Images/Icon.png" alt=""></span>
+   </div>
+   </div>
 
+    <div class="flex">
+    <div class="border-e-2 m-2"> <p></p></div>
+    <div>
+     <p>For a local restaurant, we <br> implemented a targeted PPC <br> campaign that resulted in a 50% <br> increase in website traffic and a <br> 25% increase in sales.</p>
+   <span class="text-[#B9FF66] flex gap-2">Learn more <img src="Images/Icon.png" alt=""></span>
+   </div>
+   </div>
+</div>
+    </section>
 
-            <div>
-                <div><p class="style-para" style="color: white;">For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p></div>
-                <div class="sub-sec"><p  style="color: white;">Learn more</p><img src="/images/Icon.png" alt=""></div>
-            </div>
-            <div class="line">
-                
-            </div>
-            <div>
-                <div><p class="style-para"  style="color: white;">For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p></div>
-                <div class="sub-sec"><p  style="color: white;">Learn more</p><img src="/images/Icon.png" alt=""></div>
-            </div>
-            <div class="line">
-                
-            </div>
-            <div>
-                <div><p class="style-para"  style="color: white;" >For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p></div>
-                <div class="sub-sec"><p  style="color: white;">Learn more</p><img src="/images/Icon.png" alt=""></div>
-            </div>
+    <section class="mt-12">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:gap-6">
+        <h2
+          class="text-center lg:text-left text-3xl bg-[#B9FF66] rounded-sm px-4 py-2 mb-4 lg:mb-0"
+        >
+      Our Working Process 
+        </h2>
+        <p class="text-xs text-center lg:text-left max-w-md">
+          Step-by-Step Guide to Achieving Your Business Goals
+        </p>
+      </div>
+      <div class="mt-12">
+        <div class="collapse collapse-plus bg-base-300 hover:bg-[#B9FF66] border border-base-300">
+  <input type="radio" name="my-accordion-3" checked="checked" />
+  <div class="collapse-title "> <span class="text-3xl m-4">01</span> Consultation </div>
+  <div class="collapse-content text-sm"> <hr class="m-4">During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing <br> efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</div>
+</div>
+    <div class="collapse collapse-plus bg-base-300 hover:bg-[#B9FF66] border border-base-300">
+  <input type="radio" name="my-accordion-3" checked="checked" />
+  <div class="collapse-title "> <span class="text-3xl m-4">02</span> Research and Strategy Development</div>
+  <div class="collapse-content text-sm"><hr class="m-4"> During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing <br> efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</div>
+</div>
+    <div class="collapse collapse-plus bg-base-300 hover:bg-[#B9FF66] border border-base-300">
+  <input type="radio" name="my-accordion-3" checked="checked" />
+  <div class="collapse-title "> <span class="text-3xl m-4">03</span> Implementation</div>
+  <div class="collapse-content text-sm"><hr class="m-4"> During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing <br> efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</div>
+</div>
+   <div class="collapse collapse-plus bg-base-300 hover:bg-[#B9FF66] border border-base-300">
+  <input type="radio" name="my-accordion-3" checked="checked" />
+  <div class="collapse-title "> <span class="text-3xl m-4">04</span> Monitoring and Optimization</div>
+  <div class="collapse-content text-sm"><hr class="m-4"> During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing <br> efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</div>
+</div>
 
+      </div>
+    </section>
+  </main>
+   <footer class="footer sm:footer-horizontal bg-[#0B0D17] text-[#FFFFFF] max-w-[1200px] p-10 mx-auto mt-12 rounded-xl">
+  <aside>
+    <div class="flex flex-row gap-20 ">
+    <img src="/Images/logo-small.png" alt="">
+    <p class="underline text-white"> Services </p>
+   <p class="underline text-white"> use cases </p>
+<p class="underline text-white"> Pricing </p>
+    <p class="underline text-white"> Blog </p>
+ <div class="flex gap-4 ml-10">
+      <img src="/Images/social-linkedin.png" alt="">
+      <img src="/Images/social-fb.png" alt="">
+      <img src="/Images/social-twitter.png" alt="">
+    </div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-40">
+     <div class="mt-2">
+  
+         <p class="text-center text-black lg:text-left  bg-[#B9FF66] rounded-sm px-2 py-2 mb-4 lg:mb-0"
+        >
+         Contact us
+     </p>
+    <p class="mt-4">Email: info@positivus.com</p>
+    <p class="mt-4">Phone: 555-567-8901</p>
+    <p class="mt-4">Address: 1234 Main St
+Moonstone City, Stardust State 12345</p>
+    </div>
 
-        </div>
-
-        <div class="section-3">
-            <h2 class="style-04">Our Working Process </h2>
-            <p class="style-para">Step-by-Step Guide to Achieving <br> Your Business Goals</p>
-        </div>
-
-
-    </header>
-
-
+    <div>
+    <div class="m-4 bg-[#292A32] p-10 rounded-xl">
+     <input class="m-2 rounded-xl p-4" type="email" name="" id="" placeholder="Email" >
+     <button class="m-2 text-black bg-[#B9FF66] p-4 rounded-xl">Subscribe to News</button>
+    </div>
+    </div>
+    </div>
+    
+<div>
+</div>
+  <hr class="bg-white w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-4">
+    <p>© 2023 Postivus. All rights reserved</p>
+  <p>Privacy Policy</p>  
+  </div>
+  </div>
+  </aside>
+</footer>
 </body>
-
 </html>
